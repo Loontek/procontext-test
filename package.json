@@ -2,12 +2,16 @@
   "name": "package",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://github.com/Loontek/procontext-test/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -D dist"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "vue": "^3.3.4"
   },
   "devDependencies": {
